@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+        <TextView
+                android:id="@+id/row_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="#5882b9"
+                tools:text="@string/app_name"/>
+
+        <TextView
+                android:id="@+id/row_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row_title"
+                android:layout_marginTop="3dp"
+                android:layout_toStartOf="@+id/row_image"
+                android:textColor="#000000"
+                tools:text="@string/app_name"/>
+
+        <ImageView
+                android:id="@+id/row_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/row_title"
+                android:layout_marginTop="3dp"
+                tools:background="@mipmap/ic_launcher"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
