@@ -21,7 +21,7 @@ public class InfoListViewModel extends ViewModel {
     public LiveData<List<RowDescription>> fetchInfo() {
 
         if (rowData == null) {
-            rowData = new MutableLiveData<List<RowDescription>>();
+            rowData = new MutableLiveData<>();
 
             retrieveData();
         }
